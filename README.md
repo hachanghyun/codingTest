@@ -213,42 +213,67 @@
 	print(y)
 
 
-#### (2). DFS, BFS
+#### (2). DFS
+	# g = graph
+	# v = visit
+	# visited = visited
+	def DFS(g,v,visited):
+		visited[v] = True
+		print(v,end =' ')
+		for i in g[v]:
+			if not visited[i]:
+				dfs(g,i,visited)
+	g =[
+		[],
+		[2,3,8],
+		[1,7],
+		[1,4,5],
+		[3,5],
+		[3,4],
+		[7],
+		[2,6,8],
+		[1,7],
+	]
+	
+	visited = [False] * 9
+	
+	dfs(g,1,visited)
+	
+	===>
+	1 2 7 6 8 3 4 5
+
+#### (2). BFS
 	from collections import deque
 	
-	N, M, Start = map(int, input().split())
-	A = [[] for _ in range(N + 1)]
-	for _ in range(M):
-	    s, e = map(int, input().split())
-	    A[s].append(e)  # 양방향 에지이므로 양쪽에 에지를 더하기
-	    A[e].append(s)
-	for i in range(N + 1):
-	    A[i].sort()  # 번호가 작은 노드 부터 방문하기 위해 정렬하기
-	visited = [False] * (N + 1)
+	def bfs(g,start,visited):
+		queue = deque([start])
+		visited[start] = True
 	
-	def DFS(v):
-	    print(v, end=' ')
-	    visited[v] = True
-	    for i in A[v]:
-	        if not visited[i]:
-	            DFS(i)
-	DFS(Start)
+		while queue:
+			v = queue.popleft()
+			print(v,end=' ')
+			for i in graph[v]:
+				if not visited[i]:
+					queue.append(i)
+					visitied[i] = True
 	
-	visited = [False] * (N + 1)  # 리스트 초기화
+	g =[
+		[],
+		[2,3,8],
+		[1,7],
+		[1,4,5],
+		[3,5],
+		[3,4],
+		[7],
+		[2,6,8],
+		[1,7],
+	]
+	visited = [False] * 9
 	
-	def BFS(v):
-	    queue = deque()
-	    queue.append(v)
-	    visited[v] = True
-	    while queue:
-	        now_Node = queue.popleft()
-	        print(now_Node, end=' ')
-	        for i in A[now_Node]:
-	            if not visited[i]:
-	                visited[i] = True
-	                queue.append(i)
-	print()
-	BFS(Start)
+	bfs(g,1,visited)
+	
+	==>
+	1 2 3 8 7 4 5 6
 
 
 #### (3). 이진탐색
