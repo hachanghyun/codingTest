@@ -343,3 +343,10 @@ try:
 except :
     return False
     
+
+#### 2차원배열 정렬
+	lst.sort(key=lambda x:x[0])
+
+#### round() 함수의 예제
+	round(3.14141414)
+	3
