@@ -213,7 +213,7 @@
 	print(y)
 
 
-#### (2). DFS
+#### (2). DFS (재귀함수)
 	# g = graph
 	# v = visit
 	# visited = visited
@@ -242,7 +242,7 @@
 	===>
 	1 2 7 6 8 3 4 5
 
-#### (2). BFS
+#### (2). BFS (큐함수)
 	from collections import deque
 	
 	def bfs(g,start,visited):
