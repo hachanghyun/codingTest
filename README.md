@@ -21,10 +21,10 @@
 	a.sort(reverse=True)
 
 ### dict
-     	dict1={}
+	dict1={}
 
 ### 큐
-       	from collections import deque
+	from collections import deque
 	d = deque()
 	d.appendleft(0) #왼쪽에 데이터 삽입
 	d.append(6) #오른쪽에 데이터삽입
@@ -149,13 +149,13 @@
 ### 순열
 	from itertools import permutations
 	for i in permutations([1,2,3,4], 2):
-	    print(i, end=" ")
+    		print(i, end=" ")
 
 
 ### 조합 
 	from itertools import combinations
 	for i in combinations([1,2,3,4], 2):
-	    print(i, end=" ")
+    		print(i, end=" ")
 
 
 
