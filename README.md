@@ -1,51 +1,22 @@
 # 파이썬 코딩테스트
-### 1. 입력값 처리 (python 기준) 
-#### (1). 구분자가 줄바꿈일 경우  
+### 정리
+	n = input()
 	n = int(input())
-	data = []
-	for i in range(n) :
-	  data.append(int(input())) 
-	 
-	data.sort(reverse = True)   
-	print(data)
+	n = map(int, input().split())
+	n = map(str, input().split())
+	arr = list(map(int,input().split()))
+	arr2 = [list(map(int,input().split())) for _ in range(N)]
 
-#### (2). 구분자가 띄어쓰기일 경우
-	m = int(input())
-	
-	data = list(map(int, input().split()))
-	data.sort(reverse = True)
-	print(data) 
+ 	print(a / b) #나누기
+  	print(a % b) #나머지
+   	print(a // b) #몫
+    	print(a ** b) #거듭제곱
+     	
+  	
+  	
 
-#### (3). 공백을 기준으로 구분하여 적은 수의 데이터 입력 
-	n, m, k = map(int, input().split())
-	print(n,m,k)
 
-#### (4). 이차원 배열 입력 초기화
-	n = int(input())
-	m = int(input()) 
 
-	arr = []
-	for i in range(n):
-		arr.append(list(map(int, input().split())))
-	
-	print(arr)
-
-### 2. 자료구조
-#### (1). 수자료형
-##### 나누기(실수형으로 처리)
-	print(a / b)
-
-##### 나머지
-	print(a % b)
-
-##### 몫
-	print(a // b)
-
-##### 거듭제곱
-	print(a ** b)
-
-##### 제곱근
-	print(a ** 0.5)
 
 
 #### (2). 리스트
