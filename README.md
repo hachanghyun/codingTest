@@ -23,6 +23,19 @@
 ### dict
 	dict1={}
 
+	# 밸류값 세기
+ 	from collections import Counter
+	my_list = ['apple', 'banana', 'apple', 'cherry', 'banana', 'banana']
+	count_dict = dict(Counter(my_list))
+	print(count_dict)
+	# 출력: {'apple': 2, 'banana': 3, 'cherry': 1}
+
+	# 키밸류 변경
+ 	my_dict = {'apple': 1, 'banana': 2, 'cherry': 3}
+	swapped_dict = {value: key for key, value in my_dict.items()}
+	print(swapped_dict)
+	# 출력: {1: 'apple', 2: 'banana', 3: 'cherry'}
+
 ### 큐
 	from collections import deque
 	d = deque()
