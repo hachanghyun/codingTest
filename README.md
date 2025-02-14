@@ -14,11 +14,11 @@
     	print(a ** b) #거듭제곱
 
 ### 리스트
-     	arr=[]
-      	arr=[] * N
-        arr.append(n)
+	arr=[]
+	arr=[] * N
+	arr.append(n)
 	a.sort()
- 	a.sort(reverse=True)
+	a.sort(reverse=True)
 
 ### dict
      	dict1={}
