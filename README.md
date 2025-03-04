@@ -1,4 +1,5 @@
 # 파이썬 코딩테스트
+## https://docs.python.org/ko/3/
 ### input
 	n = input()
 	n = int(input())
