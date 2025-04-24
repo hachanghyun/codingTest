@@ -4,7 +4,7 @@
 
 # 자료구조
 
-### input
+### Input
 	n = input()
 	n = int(input())
 	n = map(int, input().split())
@@ -60,7 +60,7 @@
  
 # 알고리즘
 
-### dfs
+### DFS
 	def DFS(g,v,visited):
 		visited[v] = True
 		#print(v,end =' ')
@@ -86,7 +86,7 @@
 	===>
 	1 2 7 6 8 3 4 5
 
-### bfs
+### BFS
 	from collections import deque
 	
 	def bfs(g,start,visited):
