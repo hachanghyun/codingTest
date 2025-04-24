@@ -63,17 +63,27 @@
 	# 출력: {1: 'apple', 2: 'banana', 3: 'cherry'}
 
 ## 5) queue (선입선출)
+	# queue 초기화
 	from collections import deque
 	d = deque()
-	d.appendleft(0) #왼쪽에 데이터 삽입
-	d.append(6) #오른쪽에 데이터삽입
-	d.popleft() #왼쪽 데이터 지우기
-	d.pop() #오른쪽 데이터 지우기
+
+ 	# 왼쪽에 데이터 삽입
+	d.appendleft(0)
+
+ 	# 오른쪽에 데이터삽입
+	d.append(6)
+
+  	# 왼쪽 데이터 지우기
+	d.popleft()
+
+ 	# 오른쪽 데이터 지우기
+	d.pop()
 
 ## 6) 우선순위큐 (리스트에서 최소원소 추출하는 자료구조), 그리디 알고리즘에서 주로사용
-
+	# heap queue 초기화
  	import heapq
 	heap = []
+
 	heapq.heappush(heap, 50)
 	heapq.heappush(heap, 10)
 	heapq.heappush(heap, 20)
