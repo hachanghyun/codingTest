@@ -5,12 +5,28 @@
 # 자료구조
 
 ### Input
-	n = input()
-	n = int(input())
-	n = map(int, input().split())
-	n = map(str, input().split())
-	arr = list(map(int,input().split()))
-	arr2 = [list(map(int,input().split())) for _ in range(N)]
+	# 1) input()을 호출해서 한 줄의 문자열을 입력받고, 그대로 변수 n에 저장
+	n = input()  
+	
+	# 2) input()으로 문자열을 입력받은 뒤 int()로 정수로 변환하여 변수 n에 저장
+	n = int(input())  
+	
+	# 3) input()으로 공백 구분된 문자열을 입력받고 split()으로 나눈 뒤,
+	#    map(int, …)을 통해 각 토큰을 정수로 변환하는 map 객체를 생성하여 변수 n에 저장
+	n = map(int, input().split())  
+	
+	# 4) input()으로 공백 구분된 문자열을 입력받고 split()으로 나눈 뒤,
+	#    map(str, …)을 통해 각 토큰을 문자열로 변환하는 map 객체를 생성하여 변수 n에 저장
+	n = map(str, input().split())  
+	
+	# 5) input()으로 공백 구분된 문자열을 입력받고 split()으로 나눈 뒤,
+	#    map(int, …)으로 정수로 변환하고, list()로 감싸서 리스트로 만들어 변수 arr에 저장
+	arr = list(map(int, input().split()))  
+	
+	# 6) for _ in range(N) 만큼 반복하며,
+	#    각 줄마다 input()으로 공백 구분된 문자열을 입력받고 split() 후 map(int, …)으로 정수 리스트로 변환,
+	#    그 리스트들을 모아 2차원 리스트 arr2를 생성
+	arr2 = [list(map(int, input().split())) for _ in range(N)]
 
 ### 사칙연산
  	print(a / b) #나누기
