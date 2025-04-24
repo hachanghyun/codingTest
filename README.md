@@ -4,7 +4,7 @@
 
 # 자료구조
 
-### Input
+## Input
 	# 한 줄 문자열 입력
 	n = input()
 	
@@ -23,20 +23,20 @@
 	# N줄 반복해 2차원 정수 리스트 생성
 	arr2 = [list(map(int, input().split())) for _ in range(N)]
 
-### 사칙연산
+## 사칙연산
  	print(a / b) #나누기
   	print(a % b) #나머지
    	print(a // b) #몫
 	print(a ** b) #거듭제곱
 
-### 리스트
+## 리스트, 배열
 	arr=[]
 	arr=[] * N
 	arr.append(n)
 	a.sort()
 	a.sort(reverse=True)
 
-### dict
+## dict (key-value)
 	dict1={}
 
 	# 밸류값 세기
@@ -52,7 +52,7 @@
 	print(swapped_dict)
 	# 출력: {1: 'apple', 2: 'banana', 3: 'cherry'}
 
-### 큐
+## queue (선입선출)
 	from collections import deque
 	d = deque()
 	d.appendleft(0) #왼쪽에 데이터 삽입
@@ -60,7 +60,7 @@
 	d.popleft() #왼쪽 데이터 지우기
 	d.pop() #오른쪽 데이터 지우기
 
-### 우선순위큐 (리스트에서 최소원소 추출하는 자료구조), 그리디 알고리즘에서 주로사용
+## 우선순위큐 (리스트에서 최소원소 추출하는 자료구조), 그리디 알고리즘에서 주로사용
 
  	import heapq
 	heap = []
@@ -71,7 +71,7 @@
  
 # 알고리즘
 
-### DFS
+## DFS
 	def DFS(g,v,visited):
 		visited[v] = True
 		#print(v,end =' ')
@@ -97,7 +97,7 @@
 	===>
 	1 2 7 6 8 3 4 5
 
-### BFS
+## BFS
 	from collections import deque
 	
 	def bfs(g,start,visited):
@@ -129,7 +129,7 @@
 	==>
 	1 2 3 8 7 4 5 6
 
-### 이진탐색
+## 이진탐색
 	N = int(input())
 	A = list(map(int, input().split()))
 	A.sort()
@@ -156,7 +156,7 @@
 	    else:
 	        print(0)
 
-### 소수판별
+## 소수판별
 	import math
 	M, N = map(int, input().split())
 	A = [0] * (N + 1)
@@ -172,13 +172,13 @@
 	        print(A[i])
 	    
 
-### 순열
+## 순열
 	from itertools import permutations
 	for i in permutations([1,2,3,4], 2):
     		print(i, end=" ")
 
 
-### 조합 
+## 조합 
 	from itertools import combinations
 	for i in combinations([1,2,3,4], 2):
     		print(i, end=" ")
