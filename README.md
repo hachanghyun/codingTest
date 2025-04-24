@@ -79,7 +79,6 @@
 
  	# dict key정렬
   	sorted(dict1, items(), key=lambda x: x[0])
-
    	
  	# dict value정렬
   	sorted(dict1, items(), key=lambda x: x[1])
