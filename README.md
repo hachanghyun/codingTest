@@ -24,10 +24,17 @@
 	arr2 = [list(map(int, input().split())) for _ in range(N)]
 
 ## 2) 사칙연산
- 	print(a / b) # 나누기
-  	print(a % b) # 나머지
-   	print(a // b) # 몫
-	print(a ** b) # 거듭제곱
+	# 나누기 /
+ 	print(a / b) 
+
+  	# 나머지 %
+  	print(a % b) 
+
+   	# 몫 //
+   	print(a // b)
+
+    	# 거듭제곱 **
+	print(a ** b) 
 
 ## 3) 리스트, 배열
 	arr=[]
