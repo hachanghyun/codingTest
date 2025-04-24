@@ -45,6 +45,9 @@
 	arr=[]
  	arr=[] * N
 
+	# 2차원 리스트 초기화 (bfs, dfs)
+ 	visited = [[False for _ in range(m)] for _ in range(n)] n: 행개수, m: 열개수
+
   	# 리스트 원소 추가
 	arr.append(n)
 
