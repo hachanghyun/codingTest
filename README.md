@@ -37,13 +37,16 @@
 	print(a ** b) 
 
 ## 3) 리스트, 배열
+	# 리스트 초기화
 	arr=[]
+ 
 	arr=[] * N
 	arr.append(n)
 	a.sort()
 	a.sort(reverse=True)
 
 ## 4) dict (key-value)
+	# dict 초기화
 	dict1={}
 
 	# 밸류값 세기
