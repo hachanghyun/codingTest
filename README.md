@@ -1,8 +1,8 @@
-# 파이썬 코딩테스트
+# 파이썬 공식사이트
 ## https://docs.python.org/ko/3/
 
 
-# #############자료구조##############
+# 자료구조
 
 ### input
 	n = input()
@@ -57,7 +57,8 @@
 	heapq.heappush(heap, 10)
 	heapq.heappush(heap, 20)
 	print(heap)
-## 알고리즘
+ 
+# 알고리즘
 
 ### dfs
 	def DFS(g,v,visited):
