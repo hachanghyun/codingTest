@@ -23,6 +23,10 @@
 	# N줄 반복해 2차원 정수 리스트 생성
 	arr2 = [list(map(int, input().split())) for _ in range(N)]
 
+ 	# 띄어쓰기 Input값 변수에 담기
+  	time, numer, io = re.split()
+   
+
 ## 2) 사칙연산
 	# 나누기 /
  	print(a / b) 
@@ -39,9 +43,12 @@
 ## 3) 리스트, 배열
 	# 리스트 초기화
 	arr=[]
- 
-	arr=[] * N
+ 	arr=[] * N
+
+  	# 리스트 원소 추가
 	arr.append(n)
+
+ 	# 리스트 정렬
 	a.sort()
 	a.sort(reverse=True)
 
@@ -61,6 +68,11 @@
 	swapped_dict = {value: key for key, value in my_dict.items()}
 	print(swapped_dict)
 	# 출력: {1: 'apple', 2: 'banana', 3: 'cherry'}
+
+ 	# dict value 찾기
+  	for k, v in dict1.items():
+   		if v == '장미':
+     			print(v)
 
 ## 5) queue (선입선출)
 	# queue 초기화
