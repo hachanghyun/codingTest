@@ -78,10 +78,10 @@
      			print(v)
 
  	# dict key정렬
-  	sorted(dict1, items(), key=lambda x: x[0])
+  	sorted(dict1.items(), key=lambda x: x[0])
    	
  	# dict value정렬
-  	sorted(dict1, items(), key=lambda x: x[1])
+  	sorted(dict1.items(), key=lambda x: x[1])
 
 ## 5) queue (선입선출)
 	# queue 초기화
