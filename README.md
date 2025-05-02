@@ -108,6 +108,7 @@
 	heapq.heappush(heap, 50)
 	heapq.heappush(heap, 10)
 	heapq.heappush(heap, 20)
+ heapq.heappop(heap)
 	print(heap)
  
 # 2.알고리즘
