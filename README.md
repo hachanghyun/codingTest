@@ -1,7 +1,16 @@
 # 파이썬 공식사이트
 ## https://docs.python.org/ko/3/
 
-# *코테 보기전 다 암기
+## Library reference
+### dict
+### collections
+	deque
+ 	Counter
+  	defaultdict
+### heapq
+### bisect
+### itertools
+
 # 1.자료구조
 
 ## 1) Input
