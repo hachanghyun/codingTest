@@ -234,5 +234,44 @@
 	for i in combinations([1,2,3,4], 2):
     		print(i, end=" ")
 
+## 7)동서남북
+	import sys
+	def func(arr,visited,i,j):
+	    #동서남북
+	    visited[i][j] = 1
+	    answer = 1
+	    tmpArr = [[1,0],[-1,0],[0,1],[0,-1]]
+	    for arr1 in tmpArr:
+	        dx=arr1[0]+i
+	        dy=arr1[1]+j
+	        if dx >= 0 and dx < n and dy >= 0 and dy < n:
+	            if visited[dx][dy] == 0 and arr[dx][dy] == 1:
+	                answer += func(arr,visited,dx,dy)
+	    return answer
+	        
+	n = int(input())
+	
+	arrtot = []
+	arr=[]
+	cnt=0
+	arrtmp=[]
+	for _ in range(n):
+	    str1 = str(input())
+	    for i in str1:
+	        arrtot.append(int(i))
+	    arr.append(arrtot)
+	    arrtot=[]
+	visited = [[0] * n for _ in range(n)]
+	for i in range(n):
+	    for j in range(n):
+	        if visited[i][j] == 0 and arr[i][j] == 1:
+	            answer = func(arr,visited,i,j)
+	            cnt+=1
+	            arrtmp.append(answer)
+	arrtmp.sort()
+	print(cnt)
+	for z in arrtmp:
+	    print(z)
+
 
 
