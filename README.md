@@ -120,78 +120,9 @@
  	heapq.heappop(heap)
 	print(heap)
  
-# 2.알고리즘
+# 2.문제풀이
 
-## DFS
-	def DFS(g,v,visited):
-		visited[v] = True
-		#print(v,end =' ')
-		for i in g[v]:
-			if not visited[i]:
-				dfs(g,i,visited)
-	g =[
-		[],
-		[2,3,8],
-		[1,7],
-		[1,4,5],
-		[3,5],
-		[3,4],
-		[7],
-		[2,6,8],
-		[1,7],
-	]
-	
-	visited = [False] * 9
-	
-	dfs(g,1,visited)
-	
-	===>
-	1 2 7 6 8 3 4 5
-
-## BFS
-	from collections import deque
-	
-	def bfs(g,start,visited):
-		queue = deque([start])
-		visited[start] = True
-		while queue:
-			v = queue.popleft()
-			#print(v,end=' ')
-			for i in graph[v]:
-				if not visited[i]:
-					queue.append(i)
-					visitied[i] = True
-	
-	g =[
-		[],
-		[2,3,8],
-		[1,7],
-		[1,4,5],
-		[3,5],
-		[3,4],
-		[7],
-		[2,6,8],
-		[1,7],
-	]
-	visited = [False] * 9
-	
-	bfs(g,1,visited)
-	
-	==>
-	1 2 3 8 7 4 5 6
-
-## 순열
-	from itertools import permutations
-	for i in permutations([1,2,3,4], 2):
-    		print(i, end=" ")
-
-
-## 조합 
-	from itertools import combinations
-	for i in combinations([1,2,3,4], 2):
-    		print(i, end=" ")
-
-## 동서남북
+## 동서남북 (DFS=for+재귀, BFS=while+Deque)
 	import sys
 	def func(arr,visited,i,j):
 	    #동서남북
