@@ -122,7 +122,7 @@
  
 # 2.문제풀이
 
-## 동서남북 (DFS=for+재귀, BFS=while+Deque)
+## 동서남북 (DFS=for+재귀, BFS=while+deque)
 	import sys
 	def func(arr,visited,i,j):
 	    #동서남북
