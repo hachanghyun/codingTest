@@ -14,26 +14,15 @@
 # 1.자료구조
 
 ## Input
-	# 한 줄 문자열 입력
-	n = input()
+	# 한 줄 입력
+	n = input() #문자열
+	n = int(input()) #정수
 	
-	# 정수 입력
-	n = int(input())
-	
-	# 공백 구분 정수를 map 객체로 입력
-	n = map(int, input().split())
-	
-	# 공백 구분 문자열을 map 객체로 입력
-	n = map(str, input().split())
-	
-	# 공백 구분 정수를 리스트로 입력
+	# 공백 구분 정수를 리스트로 입력 (한줄 입력 받을때)
 	arr = list(map(int, input().split()))
 	
-	# N줄 반복해 2차원 정수 리스트 생성
+	# N줄 반복해 2차원 정수 리스트 생성 (N줄 입력 받을때)
 	arr2 = [list(map(int, input().split())) for _ in range(N)]
-
- 	# 띄어쓰기 Input값 변수에 담기
-  	time, numer, io = re.split()
    
 
 ## 사칙연산
