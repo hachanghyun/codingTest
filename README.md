@@ -7,79 +7,79 @@
 # 1.자료구조
 
 ## Input
-	### 한 줄 입력
+	# 한 줄 입력
 	n = input() #문자열
 	n = int(input()) #정수
 
-	### 공백 구분 정수를 리스트로 입력 (한줄 입력 받을때)
+	# 공백 구분 정수를 리스트로 입력 (한줄 입력 받을때)
 	arr = list(map(int, input().split()))
 	
-	### N줄 반복해 2차원 정수 리스트 생성 (N줄 입력 받을때)
+	# N줄 반복해 2차원 정수 리스트 생성 (N줄 입력 받을때)
 	arr2 = [list(map(int, input().split())) for _ in range(N)]
    
 
 ## 사칙연산
-	### 나누기 / #나누기는 작대기
-	### 나머지 % #나머지는 % 퍼센트
-	### 몫 // # 몫은 작대기 두개
-	### 거듭제곱 **
+	# 나누기 / #나누기는 작대기
+	# 나머지 % #나머지는 % 퍼센트
+	# 몫 // # 몫은 작대기 두개
+	# 거듭제곱 **
 
 ## 리스트, 배열
-	### 리스트 초기화
+	# 리스트 초기화
 	arr=[]
 	arr=[] * N
 
-	### 2차원 리스트 초기화 (bfs, dfs)
+	# 2차원 리스트 초기화 (bfs, dfs)
 	visited = [[False for _ in range(m)] for _ in range(n)] n: 행개수, m: 열개수 #열이 안쪽에 들어가고 행이 그 열 덩어리들 하나하나 관리하는 개념으로 암기
 	
-	### 리스트 원소 추가
+	# 리스트 원소 추가
 	arr.append(n)
 	
-	### 리스트 정렬
+	# 리스트 정렬
 	a.sort()
 	a.sort(reverse=True)
 
 ## dict (key-value)
-	### dict 초기화
+	# dict 초기화
 	dict1={}
 	
-	### 밸류값 세기
+	# 밸류값 세기
 	from collections import Counter
 	my_list = ['apple', 'banana', 'apple', 'cherry', 'banana', 'banana']
 	count_dict = dict(Counter(my_list))
 	print(count_dict)
-	### 출력: {'apple': 2, 'banana': 3, 'cherry': 1}
+	# 출력: {'apple': 2, 'banana': 3, 'cherry': 1}
 	
-	### 키밸류 변경
+	# 키밸류 변경
 	my_dict = {'apple': 1, 'banana': 2, 'cherry': 3}
 	swapped_dict = {value: key for key, value in my_dict.items()}
 	print(swapped_dict)
-	### 출력: {1: 'apple', 2: 'banana', 3: 'cherry'}
+	# 출력: {1: 'apple', 2: 'banana', 3: 'cherry'}
 	
-	### dict value 찾기
+	# dict value 찾기
 	for k, v in dict1.items():
 		if v == '장미':
 			print(v)
 	
-	### dict 정렬
+	# dict 정렬
 	sorted(dict1.items(), key=lambda x: x[0]) #key정렬
 	sorted(dict1.items(), key=lambda x: x[1]) #value정렬
 
 ## queue (선입선출)
-	### queue 초기화
+	# queue 초기화
 	from collections import deque
 	d = deque()
 	
-	### 데이터 삽입 #기본이 오른쪽삽입이고 왼쪽 삽입은 left 붙이기
+	# 데이터 삽입 #기본이 오른쪽삽입이고 왼쪽 삽입은 left 붙이기
 	d.appendleft(0)
 	d.append(6) 
 	
-	### 왼쪽 데이터 지우기 #기본이 오른쪽삭제이고 왼쪽 삭제는 left 붙이기
+	# 왼쪽 데이터 지우기 #기본이 오른쪽삭제이고 왼쪽 삭제는 left 붙이기
 	d.popleft()
 	d.pop()
 
 ## 우선순위큐 (리스트에서 최소원소 추출하는 자료구조), 그리디 알고리즘에서 주로사용
-	### heap queue 초기화
+	# heap queue 초기화
 	import heapq
 	heap1 = []
 	
