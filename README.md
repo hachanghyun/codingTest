@@ -161,5 +161,42 @@
 	for z in arrtmp:
 	    print(z)
 
+## 누적합 찾기(11659)
+	import sys
 
-
+	n, m = map(int,input().split())
+	
+	#print(n, m)
+	
+	list1 = list(map(int,input().split()))
+	
+	#print(list1)
+	
+	list2 = [list(map(int,input().split())) for _ in range(m)]
+	
+	#print(list2)
+	
+	sum1 = 0
+	sum2 = 0
+	#sum3 = 0
+	arr1 = []
+	
+	arr1.append(0)
+	for list1detail in list1:
+	    sum1 += list1detail
+	    arr1.append(sum1)
+	#print('arr1',arr1)
+	
+	for list2detail in list2:
+	    #list2detail[0], list2detail[1]
+	
+	    '''
+	    print('list2detail[0]',list2detail[0])
+	    print('list2detail[1]',list2detail[1])
+	
+	    print('arr1[list2detail[0]]',arr1[list2detail[0]-1])
+	    print('arr1[list2detail[1]]',arr1[list2detail[1]])
+	    '''
+	    
+	    sum2 = arr1[list2detail[1]] - arr1[list2detail[0]-1]
+	    print(sum2)
