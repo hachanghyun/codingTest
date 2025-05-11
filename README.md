@@ -2,14 +2,7 @@
 ## https://docs.python.org/ko/3/
 
 ## Library reference
-### dict
-### collections
-	deque
- 	Counter
-  	defaultdict
-### heapq
-### bisect
-### itertools
+### dict, collections, deque, Counter, defaultdict, heapq, bisect, itertools
 
 # 1.자료구조
 
