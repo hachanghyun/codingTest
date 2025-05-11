@@ -26,17 +26,10 @@
    
 
 ## 사칙연산
-	# 나누기 /
- 	print(a / b) 
-
-  	# 나머지 %
-  	print(a % b) 
-
-   	# 몫 //
-   	print(a // b)
-
+	# 나누기 / #나누기는 작대기
+  	# 나머지 % #나머지는 % 퍼센트
+   	# 몫 // # 몫은 작대기 두개
 	# 거듭제곱 **
-	print(a ** b) 
 
 ## 리스트, 배열
 	# 리스트 초기화
@@ -44,7 +37,7 @@
  	arr=[] * N
 
 	# 2차원 리스트 초기화 (bfs, dfs)
- 	visited = [[False for _ in range(m)] for _ in range(n)] n: 행개수, m: 열개수
+ 	visited = [[False for _ in range(m)] for _ in range(n)] n: 행개수, m: 열개수 #열이 안쪽에 들어가고 행이 그 열 덩어리들 하나하나 관리하는 개념으로 암기
 
   	# 리스트 원소 추가
 	arr.append(n)
@@ -75,39 +68,33 @@
    		if v == '장미':
      			print(v)
 
- 	# dict key정렬
-  	sorted(dict1.items(), key=lambda x: x[0])
-   	
- 	# dict value정렬
-  	sorted(dict1.items(), key=lambda x: x[1])
+ 	# dict 정렬
+  	sorted(dict1.items(), key=lambda x: x[0]) #key정렬
+  	sorted(dict1.items(), key=lambda x: x[1]) #value정렬
 
 ## queue (선입선출)
 	# queue 초기화
 	from collections import deque
 	d = deque()
 
- 	# 왼쪽에 데이터 삽입
+ 	# 데이터 삽입 #기본이 오른쪽삽입이고 왼쪽 삽입은 left 붙이기
 	d.appendleft(0)
+	d.append(6) 
 
- 	# 오른쪽에 데이터삽입
-	d.append(6)
-
-  	# 왼쪽 데이터 지우기
+  	# 왼쪽 데이터 지우기 #기본이 오른쪽삭제이고 왼쪽 삭제는 left 붙이기
 	d.popleft()
-
- 	# 오른쪽 데이터 지우기
 	d.pop()
 
 ## 우선순위큐 (리스트에서 최소원소 추출하는 자료구조), 그리디 알고리즘에서 주로사용
 	# heap queue 초기화
  	import heapq
-	heap = []
+	heap1 = []
 
-	heapq.heappush(heap, 50)
-	heapq.heappush(heap, 10)
-	heapq.heappush(heap, 20)
- 	heapq.heappop(heap)
-	print(heap)
+	heapq.heappush(heap1, 50)
+	heapq.heappush(heap1, 10)
+	heapq.heappush(heap1, 20)
+ 	heapq.heappop(heap1)
+	print(heap1)
  
 # 2.문제풀이
 
