@@ -13,7 +13,7 @@
 
 # 1.자료구조
 
-## 1) Input
+## Input
 	# 한 줄 문자열 입력
 	n = input()
 	
@@ -36,7 +36,7 @@
   	time, numer, io = re.split()
    
 
-## 2) 사칙연산
+## 사칙연산
 	# 나누기 /
  	print(a / b) 
 
@@ -49,7 +49,7 @@
 	# 거듭제곱 **
 	print(a ** b) 
 
-## 3) 리스트, 배열
+## 리스트, 배열
 	# 리스트 초기화
 	arr=[]
  	arr=[] * N
@@ -64,7 +64,7 @@
 	a.sort()
 	a.sort(reverse=True)
 
-## 4) dict (key-value)
+## dict (key-value)
 	# dict 초기화
 	dict1={}
 
@@ -92,7 +92,7 @@
  	# dict value정렬
   	sorted(dict1.items(), key=lambda x: x[1])
 
-## 5) queue (선입선출)
+## queue (선입선출)
 	# queue 초기화
 	from collections import deque
 	d = deque()
@@ -109,7 +109,7 @@
  	# 오른쪽 데이터 지우기
 	d.pop()
 
-## 6) 우선순위큐 (리스트에서 최소원소 추출하는 자료구조), 그리디 알고리즘에서 주로사용
+## 우선순위큐 (리스트에서 최소원소 추출하는 자료구조), 그리디 알고리즘에서 주로사용
 	# heap queue 초기화
  	import heapq
 	heap = []
@@ -122,7 +122,7 @@
  
 # 2.알고리즘
 
-## 1) DFS
+## DFS
 	def DFS(g,v,visited):
 		visited[v] = True
 		#print(v,end =' ')
@@ -148,7 +148,7 @@
 	===>
 	1 2 7 6 8 3 4 5
 
-## 2) BFS
+## BFS
 	from collections import deque
 	
 	def bfs(g,start,visited):
@@ -180,61 +180,18 @@
 	==>
 	1 2 3 8 7 4 5 6
 
-## 3) 이진탐색
-	N = int(input())
-	A = list(map(int, input().split()))
-	A.sort()
-	M = int(input())
-	target_list = list(map(int, input().split()))
-	for i in range(M):
-	    find = False
-	    target = target_list[i]
-	    # 이진탐색 시작
-	    start = 0
-	    end = len(A) - 1
-	    while start <= end:
-	        midi = int((start + end) / 2)
-	        midv = A[midi]
-	        if midv > target:
-	            end = midi - 1
-	        elif midv < target:
-	            start = midi + 1
-	        else:
-	            find = True
-	            break
-	    if find:
-	        print(1)
-	    else:
-	        print(0)
-
-## 4) 소수판별
-	import math
-	M, N = map(int, input().split())
-	A = [0] * (N + 1)
-	for i in range(2, N + 1):
-	    A[i] = i
-	for i in range(2, int(math.sqrt(N)) + 1):  # 제곱근까지만 수행
-	    if A[i] == 0:
-	        continue
-	    for j in range(i + i, N + 1, i):  # 배수 지우기
-	        A[j] = 0
-	for i in range(M, N + 1):
-	    if A[i] != 0:
-	        print(A[i])
-	    
-
-## 5) 순열
+## 순열
 	from itertools import permutations
 	for i in permutations([1,2,3,4], 2):
     		print(i, end=" ")
 
 
-## 6)조합 
+## 조합 
 	from itertools import combinations
 	for i in combinations([1,2,3,4], 2):
     		print(i, end=" ")
 
-## 7)동서남북
+## 동서남북
 	import sys
 	def func(arr,visited,i,j):
 	    #동서남북
