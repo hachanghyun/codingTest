@@ -169,3 +169,41 @@
 	    
 	    sum2 = arr1[list2detail[1]] - arr1[list2detail[0]-1]
 	    print(sum2)
+
+## 좋은수 찾기(1253)
+	import sys
+
+	n = int(input())
+	
+	print('n',n)
+	
+	arr1 = list(map(int, input().split()))
+	
+	print('arr1', arr1)
+	
+	a = 0
+	b = 0
+	sum1 = 0
+	cnt1 = 0
+	
+	#for while
+	
+	
+	'''
+	for i in range(n):
+	
+	    a = arr1[i]
+	    b = arr1[-1*(i+1)]
+	
+	    print('a',a)
+	    print('b',b)
+	
+	    sum1 = a + b
+	    if sum1 in arr1:
+	        cnt1 += 1
+	    sum1 = 0
+	    a = 0
+	    b = 0
+	
+	print('cnt1',cnt1)
+	'''
