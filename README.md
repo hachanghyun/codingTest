@@ -175,35 +175,38 @@
 	
 	n = int(input())
 	
-	print('n',n)
+	#print('n',n)
 	
-	arr1 = list(map(int, input().split()))
+	arr = list(map(int, input().split()))
+	arr.sort()
 	
-	print('arr1', arr1)
+	#print('arr', arr)
+	cnt = 0
 	
-	a = 0
-	b = 0
-	sum1 = 0
-	cnt1 = 0
+	for i in range(len(arr)):
 	
-	#for while
+	    goal = arr[i]
 	
+	    start = 0
 	
-	'''
-	for i in range(n):
+	    end = len(arr) - 1
 	
-	    a = arr1[i]
-	    b = arr1[-1*(i+1)]
+	    while start < end:
+	        if arr[start] + arr[end] == goal:
+	            if start == i:
+	                start += 1
 	
-	    print('a',a)
-	    print('b',b)
+	            elif  end == i:
+	                end -= 1
 	
-	    sum1 = a + b
-	    if sum1 in arr1:
-		cnt1 += 1
-	    sum1 = 0
-	    a = 0
-	    b = 0
+	            else:
+	                cnt += 1
+	                break
+	            
+	        elif arr[start] + arr[end] > goal:
+	            end -= 1
 	
-	print('cnt1',cnt1)
-	'''
+	        elif arr[start] + arr[end] < goal:
+	            start += 1
+	
+	print(cnt)
