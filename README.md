@@ -215,3 +215,20 @@
 	            start += 1
 	
 	print(cnt)
+
+## 수 정렬하기(2750)
+	import sys
+
+	n = int(input())
+	
+	arr = []
+	
+	for _ in range(n):
+	    arr.append(int(input()))
+	
+	arr.sort()
+	
+	#print('arr',arr)
+	
+	for i in arr:
+	    print(i)
